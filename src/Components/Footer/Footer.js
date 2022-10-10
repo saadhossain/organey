@@ -1,7 +1,7 @@
 import React from 'react';
 const Footer = () => {
     return (
-        <div className='flex gap-10 justify-center text-left my-5'>
+        <div className='flex gap-10 justify-center text-left my-5 bg-[#D3EAF2] py-10'>
             <div className='px-2 border-r border-[#4D8052]'>
                 <h4 className="text-2xl uppercase my-4">Contact Us</h4>
                 <p>

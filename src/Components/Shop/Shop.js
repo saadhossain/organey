@@ -27,7 +27,7 @@ const Shop = () => {
     return (
         <div>
             <h1 className='text-5xl font-bold py-5 text-[#FE9200]'>Latest Products</h1>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
+            <div className='container w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-5'>
                 {products.map(product => <Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>)}
             </div>
             <ToastContainer/>

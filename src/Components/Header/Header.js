@@ -7,7 +7,7 @@ const Header = () => {
     const [expand, setExpand] = useState(false);
     const [cart]= useContext(CartContext)
     return (
-        <div className='flex justify-between items-center py-2'>
+        <div className='container w-10/12 mx-auto flex justify-between items-center py-2'>
             <div>
                 <Link to='/' className='flex items-center gap-2'>
                     <img src={logo} alt='Organey Logo' />
@@ -15,7 +15,7 @@ const Header = () => {
                 </Link>
             </div>
             <div className='flex gap-4'>
-                <ul className={`md:flex gap-4 absolute md:static duration-500 ${expand ? 'top-12' : 'top-[-200px]'}`}>
+                <ul className={`md:flex gap-4 font-semibold absolute md:static duration-500 ${expand ? 'top-12' : 'top-[-200px]'}`}>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/shop'>Shop</Link></li>
                     <li><Link to='/about'>About</Link></li>

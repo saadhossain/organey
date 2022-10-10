@@ -11,9 +11,9 @@ const Main = () => {
     return (
         <ProductContext.Provider value={products}>
             <CartContext.Provider value={[cart, setCart]}>
-                <div className='container w-10/12 mx-auto'>
+                <div>
                     <Header></Header>
-                    <Outlet></Outlet>
+                    <Outlet className='container w-10/12 mx-auto'></Outlet>
                     <Footer></Footer>
                 </div>
             </CartContext.Provider>
