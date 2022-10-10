@@ -1,0 +1,22 @@
+.fruits-vegetable, .dairy-product, .snacks, .drinks{
+    background-image: url(./assests/vegetables.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    min-width: 250px;
+}
+.fruits-vegetable{
+    background-image: url(./assests/vegetables.jpg);
+}
+.dairy-product{
+    background-image: url(./assests/dairy-items.jpg);
+}
+.snacks{
+    background-image: url(./assests//snacks.jpg);
+}
+.drinks{
+    background-image: url(./assests//pineapp-juice.jpg);
+}
