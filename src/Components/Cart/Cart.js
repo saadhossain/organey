@@ -1,9 +1,11 @@
-import React from 'react';
+import { useContext } from "react";
+import { CartContext } from "../../Layout/Main";
 
 const Cart = () => {
+    const [cart, setCart] = useContext(CartContext);
     return (
-        <div>
-            <h1>Cart Components</h1>
+        <div className="my-5 min-h-[200px]">
+            <h1 className="text-3xl font-bold">{cart.length ? 'Review Cart Item' : 'Cart is Empty'}</h1>
         </div>
     );
 };

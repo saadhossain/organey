@@ -1,0 +1,106 @@
+[
+    {
+      "id": "623853b2614a1",
+      "index": 0,
+      "price": 14,
+      "picture": "https://i.ibb.co/K7RfKw8/banana.jpg",
+      "name": "Banana",
+      "category": "Fruits"
+    },
+    {
+        "id": "623853b2614a2",
+        "index": 0,
+        "price": 5,
+        "picture": "https://i.ibb.co/QQyLRcX/green-apple.png",
+        "name": "Green Apple",
+        "category": "Fruits"
+      },
+    {
+      "id": "623853b2614a3",
+      "index": 0,
+      "price": 3,
+      "picture": "https://i.ibb.co/5TGmLmR/guava.jpg",
+      "name": "Fresh Guavas",
+      "category": "Fruits"
+    },
+    {
+      "id": "623853b2614a4",
+      "index": 0,
+      "price": 6,
+      "picture": "https://i.ibb.co/60718cG/orange.jpg",
+      "name": "Orange",
+      "category": "Fruits"
+    },
+    {
+      "id": "623853b2614a5",
+      "index": 0,
+      "price": 7,
+      "picture": "https://i.ibb.co/RSSRfmg/papaya.jpg",
+      "name": "Papaya",
+      "category": "Fruits"
+    },
+    {
+      "id": "623853b2614a6",
+      "index": 0,
+      "price": 9,
+      "picture": "https://i.ibb.co/kmRskTL/strawberry.jpg",
+      "name": "Straberry",
+      "category": "Fruits"
+    },
+    {
+        "id": "623853b2614a7",
+        "index": 0,
+        "price": 25,
+        "picture": "https://i.ibb.co/1b6SFsf/beef.webp",
+        "name": "Fresh Beef",
+        "category": "Meat"
+      },
+    {
+      "id": "623853b2614a8",
+      "index": 0,
+      "price": 30,
+      "picture": "https://i.ibb.co/p0rmFRB/meat.jpg",
+      "name": "Fresh Mutton",
+      "category": "Meat"
+    },
+    {
+      "id": "623853b2614a9",
+      "index": 0,
+      "price": 12,
+      "picture": "https://i.ibb.co/DfDPJjx/salmon-fish.jpg",
+      "name": "Salmon fish",
+      "category": "Fish"
+    },
+    {
+      "id": "623853b2614a10",
+      "index": 0,
+      "price": 15,
+      "picture": "https://i.ibb.co/hgc6G4x/hilsa-fish.jpg",
+      "name": "Hilsha fish",
+      "category": "Fish"
+    },
+    {
+      "id": "623853b2614a11",
+      "index": 0,
+      "price": 4,
+      "picture": "https://i.ibb.co/G30q6CG/pumpkin.jpg",
+      "name": "Pumpkin",
+      "category": "Vegetable"
+    },
+    {
+      "id": "623853b2614a12",
+      "index": 0,
+      "price": 3,
+      "picture": "https://i.ibb.co/zb0vRbP/onion.jpg",
+      "name": "Red Onion",
+      "category": "Vegetable"
+    },
+    {
+      "id": "623853b2614a13",
+      "index": 0,
+      "price": 2,
+      "picture": "https://i.ibb.co/2MN02f7/green-beans.jpg",
+      "name": "Green Bean",
+      "category": "Vegetable"
+    }
+  ]

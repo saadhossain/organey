@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './organey-logo.png';
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/solid'
+import { CartContext } from '../../Layout/Main';
 const Header = () => {
     const [expand, setExpand] = useState(false);
+    const [cart]= useContext(CartContext)
     return (
         <div className='flex justify-between items-center py-2'>
             <div>
@@ -18,7 +20,7 @@ const Header = () => {
                     <li><Link to='/shop'>Shop</Link></li>
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/blog'>Blog</Link></li>
-                    <li><Link to='/cart'>Cart</Link></li>
+                    <li><Link to='/cart'>Cart<sup className='text-red-600 font-bold'>{cart.length}</sup></Link></li>
                 </ul>
                 <div onClick={()=> setExpand(!expand)} className='h-6 w-6 text-gray-700 md:hidden'>
                     {

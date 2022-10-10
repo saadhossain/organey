@@ -6,12 +6,14 @@ import Home from "../Components/Home/Home";
 import Shop from "../Components/Shop/Shop";
 import Blog from "../Components/Blog/Blog"
 import Main from "../Layout/Main";
+import { cartAndDataLoader } from "../Loader/cartAndDataLoader";
 
 export const routes = createBrowserRouter([
     {
         path:'/', 
         element:<Main></Main>,
         errorElement:<ErrorPage></ErrorPage>,
+        loader:cartAndDataLoader,
         children:[
             {path: '/', loader:()=> fetch('categoryshowcase.json'), element: <Home></Home>},
             {path: '/shop', element: <Shop></Shop>},
