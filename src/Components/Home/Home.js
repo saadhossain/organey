@@ -30,9 +30,11 @@ const Home = () => {
     return (
         <div>
             <div className='w-full'>
+                {/* Home Banner */}
                 <img src={banner} alt='Men with Fresh Vegetables' className='w-full' />
-                <div className='flex gap-10 my-5 justify-center'>
-                    <div className='fruits-vegetable text-black'>
+                {/* Category and Sub Category Showcase */}
+                <div className='flex-row md:flex gap-10 my-5 justify-center'>
+                    <div className='fruits-vegetable text-black m-5 md:m-0'>
                         <h4 className='text-2xl'>Fruits & Vegetables</h4>
                         <ul>
                             <li>Nuts & SeedsFruits</li>
@@ -42,7 +44,7 @@ const Home = () => {
                             <li>Vegetables</li>
                         </ul>
                     </div>
-                    <div className='dairy-product text-black'>
+                    <div className='dairy-product text-black m-5 md:m-0'>
                         <h4 className='text-2xl'>Dairy Products</h4>
                         <ul>
                             <li>Milks</li>
@@ -52,7 +54,7 @@ const Home = () => {
                             <li>Cheese</li>
                         </ul>
                     </div>
-                    <div className='snacks text-black'>
+                    <div className='snacks text-black m-5 md:m-0'>
                         <h4 className='text-2xl'>Snacks</h4>
                         <ul>
                             <li>Potato Chips</li>
@@ -62,7 +64,7 @@ const Home = () => {
                             <li>Noodles</li>
                         </ul>
                     </div>
-                    <div className='drinks text-black'>
+                    <div className='drinks text-black m-5 md:m-0'>
                         <h4 className='text-2xl'>Cold Drinks</h4>
                         <ul>
                             <li>Coffee</li>
@@ -74,21 +76,21 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <h1 className='text-5xl font-bold py-5 text-[#FE9200]'>Latest Products</h1>
+            <h1 className='text-3xl md:text-5xl font-bold py-5 text-[#FE9200]'>Latest Products</h1>
             <div className='container w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-5'>
                 {products.map(product => <Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>)}
             </div>
             <div className='offer-bg text-white'>
-                <h1 className='text-6xl font-bold mb-5'>Special Product</h1>
-                <h3 className='text-3xl font-bold'>70% Off all organic for the</h3>
-                <h3 className='text-3xl font-bold'>next 02 days only.</h3>
-                <h1 className='text-6xl font-bold mt-5'>Grab Best Deal</h1>
+                <h1 className='text-3xl md:text-6xl font-bold mb-5'>Special Product</h1>
+                <h3 className='text-xl md:text-3xl font-bold'>70% Off all organic for the</h3>
+                <h3 className='text-xl md:text-3xl font-bold'>next 02 days only.</h3>
+                <h1 className='text-3xl md:text-6xl font-bold mt-5'>Grab Best Deal</h1>
             </div>
             <div className='summer-offer'>
                 <div className='mt-40 text-white'>
-                    <h1 className='text-6xl font-bold'>Summer Offer</h1>
-                    <h3 className='text-3xl'>Healthy Kitchen</h3>
-                    <h3 className='text-3xl'>Get <span className='text-[#FE9200]'>$15.99</span> Off All Products</h3>
+                    <h1 className='text-2xl md:text-6xl font-bold'>Summer Offer</h1>
+                    <h3 className='text-xl md:text-3xl'>Healthy Kitchen</h3>
+                    <h3 className='text-xl md:text-3xl'>Get <span className='text-[#FE9200]'>$15.99</span> Off All Products</h3>
                     <button className='text-semibold border border-[#F79817] hover:bg-[#FE9200] py-2 px-3 my-4 rounded'><Link to='/shop'>Shop Now</Link></button>
                 </div>
             </div>

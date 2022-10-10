@@ -1,8 +1,8 @@
 import React from 'react';
 const Footer = () => {
     return (
-        <div className='flex gap-10 justify-center text-left my-5 bg-[#D3EAF2] py-10'>
-            <div className='px-2 border-r border-[#4D8052]'>
+        <div className='flex-row md:flex gap-10 justify-center text-left my-5 bg-[#D3EAF2] py-10'>
+            <div className='px-2 border-r md:border-r-[#4D8052]'>
                 <h4 className="text-2xl uppercase my-4">Contact Us</h4>
                 <p>
                     9066 Green Lake Drive Chevy Chase, MD 20815
@@ -20,7 +20,7 @@ const Footer = () => {
                     <p>(1800)-88-66-991</p>
                 </span>
             </div>
-            <div className='px-2 border-r border-[#4D8052]'>
+            <div className='px-2 border-r md:border-r-[#4D8052]'>
                 <h4 className='text-2xl uppercase my-4'>Information</h4>
                 <ul>
                     <li>Fruits & Vegetables</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <li>Health & Wellness</li>
                 </ul>
             </div>
-            <div className='px-2 border-r border-[#4D8052]'>
+            <div className='px-2 border-r md:border-r-[#4D8052]'>
                 <h4 className='text-2xl uppercase my-4'>My Account</h4>
                 <ul>
                     <li>My Account</li>
