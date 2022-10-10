@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { CartContext } from "../../Layout/Main";
 import { deleteShoppingCart, removeFromDb } from "../../Utility/fakedb";
 import CartItem from "../CartItem/CartItem";
@@ -11,15 +13,17 @@ const Cart = () => {
         const updatedCart = cart.filter(product=> product.id !== id);
         setCart(updatedCart)
         removeFromDb(id);
+        return toast.error('Item Removed', {autoClose:500})
     }
 
     const handlePlaceOrder = () =>{
         if(cart.length){
             setCart([]);
             deleteShoppingCart();
+            return toast.success('Order Placed', {autoClose:500})
         }
         else{
-            alert('No Product In Cart')
+            return toast.error('No Product in Cart', {autoClose:500})
         }
     }
     let total = 0;
@@ -40,8 +44,10 @@ const Cart = () => {
                 <button className='text-semibold border border-[#F79817] hover:bg-[#FE9200] py-2 px-3 my-4 rounded'><Link to='/shop'>Back to Shop</Link></button>
                 <button onClick={handlePlaceOrder} className='text-semibold bg-[#F79817] hover:bg-[#FE9200] py-2 px-3 my-4 rounded'>Place Order</button>
             </div>
+            <ToastContainer />
         </div>
     );
+
 };
 
 export default Cart;

@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { CartContext, ProductContext } from '../../Layout/Main';
 import { addToDb } from '../../Utility/fakedb';
 import Product from '../Product/Product';
@@ -22,6 +24,7 @@ const Home = () => {
         }
         setCart(newCart)
         addToDb(product.id)
+        toast.success('Product Added to Cart', {autoClose:500})
     }
     return (
         <div>
@@ -74,6 +77,7 @@ const Home = () => {
             <div className='grid grid-cols-2 md:grid-cols-4 gap-5'>
                 {products.map(product => <Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>)}
             </div>
+            <ToastContainer/>
         </div>
     );
 };
